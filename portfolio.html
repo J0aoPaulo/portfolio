@@ -24,10 +24,14 @@
         <nav class="navbar" aria-label="Navegação principal">
             <ul>
                 <li><a href="#introducao" class="nav-link"><i class="fas fa-user" aria-hidden="true"></i> Introdução</a></li>
+                <li><a href="#habilidades" class="nav-link"><i class="fas fa-code" aria-hidden="true"></i> Habilidades</a></li>
                 <li><a href="#projetos" class="nav-link"><i class="fas fa-flask" aria-hidden="true"></i> Projetos</a></li>
                 <li><a href="#interesses" class="nav-link"><i class="fas fa-star" aria-hidden="true"></i> Interesses</a></li>
+                <li><a href="#galeria" class="nav-link"><i class="fas fa-images" aria-hidden="true"></i> Minha Galeria</a></li>
+                <li><a href="#aprendizado" class="nav-link"><i class="fas fa-lightbulb" aria-hidden="true"></i> Jornada</a></li>
                 <li><a href="contato.html" class="nav-link"><i class="fas fa-envelope" aria-hidden="true"></i> Contato</a></li>
-                <li><a href="depoimentos.html" class="nav-link"><i class="fas fa-comment-dots" aria-hidden="true"></i>Depoimentos</a></li>            </ul>
+                <li><a href="depoimentos.html" class="nav-link"><i class="fas fa-comment-dots" aria-hidden="true"></i> Depoimentos</a></li>
+            </ul>
         </nav>
     </header>
 
@@ -35,11 +39,15 @@
         <section id="introducao">
             <div class="container">
                 <h1 class="animated-title"><i class="fas fa-address-card" aria-hidden="true"></i> Introdução</h1>
-                <p class="animated-text">
-                    Olá! Meu nome é João Paulo, sou desenvolvedor backend com experiência sólida em Java e Spring Boot.
-                    Desenvolvo APIs RESTful, trabalho com integrações de banco de dados e foco em qualidade nas entregas.
-                    Sempre em busca de aprimoramento e inovação, valorizo a cooperação em equipe para o sucesso dos projetos.
-                </p>
+                <div class="intro-content">
+                    <figure class="profile-image animated-text">
+                        <img src="img/profile.jpg" alt="Foto de João Paulo" class="profile-pic rounded">
+                    </figure>
+                    <p class="animated-text">
+                        Olá! Sou João Paulo, desenvolvedor backend especializado em Java e Spring Boot.
+                        Atuo no desenvolvimento de APIs RESTful e integrações, sempre focando em código limpo e boas práticas.
+                    </p>
+                </div>
             </div>
         </section>
 
@@ -69,10 +77,46 @@
         <section id="interesses">
             <div class="container">
                 <h2><i class="fas fa-star" aria-hidden="true"></i> Interesses</h2>
-                <p>
-                    Tenho um grande interesse em desenvolvimento com Java, banco de dados e arquiteturas de software.
-                    Nos momentos de <laz></laz>er, gosto de jogar online com amigos e explorar novas tecnologias.
-                </p>
+                
+                <div class="interests-grid">
+                    <div class="interest-category">
+                        <h3><i class="fas fa-laptop-code"></i> Tecnologias</h3>
+                        <ul>
+                            <li>Desenvolvimento Backend com Java e Spring Boot</li>
+                            <li>Arquitetura de Microsserviços</li>
+                            <li>Clean Code e Design Patterns</li>
+                            <li>DevOps e Continuous Integration</li>
+                            <li>Cloud Computing (AWS, Azure)</li>
+                        </ul>
+                    </div>
+        
+                    <div class="interest-category">
+                        <h3><i class="fas fa-book"></i> Áreas de Estudo</h3>
+                        <ul>
+                            <li>Engenharia de Software</li>
+                            <li>Segurança da Informação</li>
+                            <li>Performance e Otimização</li>
+                        </ul>
+                    </div>
+        
+                    <div class="interest-category">
+                        <h3><i class="fas fa-gamepad"></i> Hobbies</h3>
+                        <ul>
+                            <li>Jogos online competitivos</li>
+                            <li>Desenvolvimento de projetos pessoais</li>
+                        </ul>
+                    </div>
+        
+                    <div class="interest-category">
+                        <h3><i class="fas fa-users"></i> Comunidade</h3>
+                        <ul>
+                            <li>Participação em eventos tech</li>
+                            <li>Compartilhamento de conhecimento</li>
+                            <li>Mentoria para iniciantes</li>
+                            <li>Networking profissional</li>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </section>
 
@@ -297,7 +341,7 @@
                         <ul>
                             <li>
                                 <strong>Consistência é Chave</strong>
-                                <p>Dedique pelo menos 1 hora por dia para estudar e praticar novas tecnologias. A consistência supera o talento natural.</p>
+                                <p>Dedique pelo menos 1 hora por dia para estudar e praticar novas tecnologias.</p>
                             </li>
                             <li>
                                 <strong>Projetos Práticos</strong>
@@ -348,6 +392,30 @@
                             <p>Demonstração de validações robustas usando anotações do Bean Validation.</p>
                         </div>
                     </div>
+                </div>
+                <div class="comments-section">
+                    <h3><i class="fas fa-comments"></i> Comentários</h3>
+                    
+                    <form class="comment-form">
+                        <div class="form-group">
+                            <label for="name">Nome:</label>
+                            <input type="text" id="name" name="name" required placeholder="Seu nome">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">E-mail:</label>
+                            <input type="email" id="email" name="email" required placeholder="seu@email.com">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="comment">Comentário:</label>
+                            <textarea id="comment" name="comment" required placeholder="Compartilhe seus pensamentos..."></textarea>
+                        </div>
+                        
+                        <button type="submit" class="submit-btn">
+                            <i class="fas fa-paper-plane"></i> Enviar Comentário
+                        </button>
+                    </form>
                 </div>
             </div>
         </section>
