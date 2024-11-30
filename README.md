@@ -60,5 +60,4 @@ Para mais informações, entre em contato através da página de [Contato](conta
 
 ## Redes Sociais
 
-- [GitHub](https://github.com/J0aoPaulo)
 - [LinkedIn](https://www.linkedin.com/in/joaopauloback)
