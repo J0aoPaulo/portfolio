@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Depoimentos de Clientes - João Paulo</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        :root {
+            --primary-color: #2c3e50;
+            --secondary-color: #3498db;
+            --background-color: #f4f4f4;
+            --white: #ffffff;
+            --text-color: #333;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: var(--background-color);
+            line-height: 1.6;
+            color: var(--text-color);
+        }
+
+        .testimonials-container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 2rem;
+        }
+
+        .testimonials-header {
+            text-align: center;
+            margin-bottom: 3rem;
+            color: var(--primary-color);
+        }
+
+        .testimonials-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .testimonial-card {
+            background-color: var(--white);
+            border-radius: 10px;
+            box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+            padding: 2rem;
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+
+        .testimonial-card:hover {
+            transform: translateY(-10px);
+        }
+
+        .testimonial-image {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 1rem;
+            border: 4px solid var(--secondary-color);
+        }
+
+        .testimonial-quote {
+            font-style: italic;
+            color: var(--text-color);
+            margin-bottom: 1rem;
+            position: relative;
+            padding: 0 1rem;
+        }
+
+        .testimonial-quote::before,
+        .testimonial-quote::after {
+            content: '"';
+            color: var(--secondary-color);
+            font-size: 2rem;
+            position: absolute;
+        }
+
+        .testimonial-quote::before {
+            left: -10px;
+            top: -10px;
+        }
+
+        .testimonial-quote::after {
+            right: -10px;
+            bottom: -20px;
+        }
+
+        .testimonial-name {
+            font-weight: bold;
+            color: var(--primary-color);
+        }
+
+        .testimonial-role {
+            color: var(--secondary-color);
+            font-size: 0.9rem;
+        }
+        .back-nav {
+            padding: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+    
+        .back-button {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 10px 20px;
+            background-color: var(--primary-color);
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+    
+        .back-button:hover {
+            background-color: var(--secondary-color);
+        }
+    
+        .back-button i {
+            font-size: 0.9em;
+        }
+
+        @media screen and (max-width: 768px) {
+            .testimonials-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="testimonials-container">
+        <header class="testimonials-header">
+            <h1><i class="fas fa-comment-dots"></i> Depoimentos de Clientes</h1>
+            <p>Veja o que meus clientes dizem sobre meus serviços</p>
+        </header>
+
+        <div class="testimonials-grid">
+            <div class="testimonial-card">
+                <img src="https://randomuser.me/api/portraits/women/1.jpg" alt="Maria Silva" class="testimonial-image">
+                <blockquote class="testimonial-quote">
+                    João Paulo nos ajudou a desenvolver uma API robusta e escalável para nosso consultório. Sua expertise em Spring Boot foi fundamental para o sucesso do projeto.
+                </blockquote>
+                <div class="testimonial-author">
+                    <p class="testimonial-name">Maria Silva</p>
+                    <p class="testimonial-role">Diretora Clínica</p>
+                </div>
+            </div>
+
+            <div class="testimonial-card">
+                <img src="https://randomuser.me/api/portraits/men/10.jpg" alt="Pedro Santos" class="testimonial-image">
+                <blockquote class="testimonial-quote">
+                    Contratei João Paulo para refatorar nosso sistema de gerenciamento de fórum educacional. O resultado superou todas as expectativas em termos de performance e segurança.
+                </blockquote>
+                <div class="testimonial-author">
+                    <p class="testimonial-name">Pedro Santos</p>
+                    <p class="testimonial-role">Coordenador de TI</p>
+                </div>
+            </div>
+
+            <div class="testimonial-card">
+                <img src="https://randomuser.me/api/portraits/women/19.jpg" alt="Ana Oliveira" class="testimonial-image">
+                <blockquote class="testimonial-quote">
+                    Excelente profissional! João Paulo desenvolveu uma solução personalizada para nossa aplicação de busca musical com uma integração perfeita com a API do Spotify.
+                </blockquote>
+                <div class="testimonial-author">
+                    <p class="testimonial-name">Ana Oliveira</p>
+                    <p class="testimonial-role">Gerente de Produto</p>
+                </div>
+            </div>
+
+            <div class="testimonial-card">
+                <img src="https://randomuser.me/api/portraits/men/4.jpg" alt="Caos Mendes" class="testimonial-image">
+                <blockquote class="testimonial-quote">
+                    Profissionalismo, comprometimento e qualidade técnica. João Paulo entregou nossa API REST com todos os requisitos funcionais e não funcionais mapeados.
+                </blockquote>
+                <div class="testimonial-author">
+                    <p class="testimonial-name">Carlos Mendes</p>
+                    <p class="testimonial-role">CTO</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<nav class="back-nav">
+    <a href="portfolio.html" class="back-button">
+        <i class="fas fa-arrow-left"></i> Voltar à Página Principal
+    </a>
+</nav>
+</html>
